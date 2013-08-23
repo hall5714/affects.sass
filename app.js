@@ -42,6 +42,18 @@ animation.controller('AnimationController', function($scope, $timeout, $compile)
 	$scope.animationsRotate = [{
 		name: 'rotate',
 		open: 'false'
+	},{
+		name: 'rotate-down-left',
+		open: 'false'
+	},{
+		name: 'rotate-down-right',
+		open: 'false'
+	},{
+		name: 'rotate-up-left',
+		open: 'false'
+	},{
+		name: 'rotate-up-right',
+		open: 'false'
 	}];	
 
 	$scope.modalOpen = false;
