@@ -1,0 +1,35 @@
+@include keyframes('animate-rotate-in-up-right') {
+	0% { 
+		@include rotate($rotateHingedStartAngle * -1);
+		@include transform-origin(right bottom);
+		opacity: 0;
+	}
+
+	100% {
+		@include rotate($rotateHingedEndAngle);
+		@include transform-origin(right bottom);
+		opacity: 1;
+	}
+}
+
+@keyframes keyframes('animate-rotate-out-up-right') {
+	0% {
+		@include rotate($rotateHingedEndAngle);
+		@include transform-origin(right bottom);
+		opacity: 1;
+	}
+
+	100% {
+		@include rotate($rotateHingedStartAngle);
+		@include transform-origin(right bottom);
+		opacity: 0;
+	}
+}
+
+.animate-rotate-up-right.ng-enter {
+    @include animation(animate-rotate-in-up-right $rotateDuration);
+}
+
+.animate-rotate-up-right.ng-leave {
+	@include animation(animate-rotate-out-up-right $rotateDuration);
+}

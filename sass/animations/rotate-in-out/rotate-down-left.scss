@@ -1,0 +1,35 @@
+@include keyframes('animate-rotate-in-down-left') {
+	0% { 
+		@include rotate($rotateHingedStartAngle * -1);
+		@include transform-origin(left bottom);
+		opacity: 0;
+	}
+
+	100% {
+		@include rotate($rotateHingedEndAngle);
+		@include transform-origin(left bottom);
+		opacity: 1;
+	}
+}
+
+@keyframes keyframes('animate-rotate-out-down-left') {
+	0% {
+		@include rotate($rotateHingedEndAngle);
+		@include transform-origin(left bottom);
+		opacity: 1;
+	}
+
+	100% {
+		@include rotate($rotateHingedStartAngle);
+		@include transform-origin(left bottom);
+		opacity: 0;
+	}
+}
+
+.animate-rotate-down-left.ng-enter {
+    @include animation(animate-rotate-in-down-left $rotateDuration);
+}
+
+.animate-rotate-down-left.ng-leave {
+	@include animation(animate-rotate-out-down-left $rotateDuration);
+}

@@ -3,11 +3,17 @@
 @import 'mixins';
 @import 'variables';
 
+// simple transitions
+@import 'transitions/fade';
+@import 'transitions/scale-fade';
+@import 'transitions/slide-fade';
+
+// bounce animations
 @import 'animations/bounce-in-out/bounce-down';
 @import 'animations/bounce-in-out/bounce-up';
 @import 'animations/bounce-in-out/bounce-right';
 @import 'animations/bounce-in-out/bounce-left';
 
-@import 'transitions/fade';
-@import 'transitions/scale-fade';
-@import 'transitions/slide-fade';
+// rotate animations
+@import 'animations/rotate-in-out/rotate';
+@import 'animations/rotate-in-out/rotate-down-left';
