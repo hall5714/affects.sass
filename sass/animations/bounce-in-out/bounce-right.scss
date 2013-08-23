@@ -35,9 +35,9 @@
 }
 
 .animate-bounce-right.ng-enter {
-    @include animation(animate-bounce-right-in, $bounceDuration);
+    @include animation(animate-bounce-right-in $bounceDuration);
 }
 
 .animate-bounce-right.ng-leave {
-	@include animation(animate-bounce-right-out, $bounceDuration);
+	@include animation(animate-bounce-right-out $bounceDuration);
 }
