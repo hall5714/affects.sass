@@ -4,7 +4,7 @@
 .animate-slide-left-fade.ng-leave,
 .animate-slide-right-fade.ng-enter,
 .animate-slide-right-fade.ng-leave {  
-    @include transition(all, $slideDuration, $slideMethod);
+    @include transition(all $slideDuration $slideMethod);
     @include translate($slideX, 0);
 }
 

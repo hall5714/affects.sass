@@ -2,7 +2,7 @@
 
 .animate-scale-down-fade.ng-enter,
 .animate-scale-down-fade.ng-leave {
-	@include transition(all, $scaleDuration, $scaleMethod);
+	@include transition(all $scaleDuration $scaleMethod);
 	@include scale($scaleSmall);
 }
 

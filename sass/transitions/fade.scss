@@ -1,6 +1,6 @@
 .animate-fade.ng-enter,
 .animate-fade.ng-leave {
-	@include transition(all, $fadeDuration, linear);
+	@include transition(all $fadeDuration linear);
 }
 
 .animate-fade.ng-enter,
