@@ -1,5 +1,3 @@
-@import '../../transitions/fade';
-
 @include keyframes('animate-rotate-in') {
 	0% { 
 		@include rotate($rotateStartAngle * -1);

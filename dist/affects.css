@@ -5,7 +5,7 @@
 
   60% {
     opacity: 1;
-    -webkit-transform: translate(0, 0%); }
+    -webkit-transform: translate(0, 10%); }
 
   80% {
     -webkit-transform: translate(0, -5%); }
@@ -20,7 +20,7 @@
 
   60% {
     opacity: 1;
-    -moz-transform: translate(0, 0%); }
+    -moz-transform: translate(0, 10%); }
 
   80% {
     -moz-transform: translate(0, -5%); }
@@ -35,7 +35,7 @@
 
   60% {
     opacity: 1;
-    -o-transform: translate(0, 0%); }
+    -o-transform: translate(0, 10%); }
 
   80% {
     -o-transform: translate(0, -5%); }
@@ -50,7 +50,7 @@
 
   60% {
     opacity: 1;
-    transform: translate(0, 0%); }
+    transform: translate(0, 10%); }
 
   80% {
     transform: translate(0, -5%); }
@@ -123,7 +123,7 @@
 
   60% {
     opacity: 1;
-    -webkit-transform: translate(0, 0%); }
+    -webkit-transform: translate(0, -10%); }
 
   80% {
     -webkit-transform: translate(0, 5%); }
@@ -138,7 +138,7 @@
 
   60% {
     opacity: 1;
-    -moz-transform: translate(0, 0%); }
+    -moz-transform: translate(0, -10%); }
 
   80% {
     -moz-transform: translate(0, 5%); }
@@ -153,7 +153,7 @@
 
   60% {
     opacity: 1;
-    -o-transform: translate(0, 0%); }
+    -o-transform: translate(0, -10%); }
 
   80% {
     -o-transform: translate(0, 5%); }
@@ -168,7 +168,7 @@
 
   60% {
     opacity: 1;
-    transform: translate(0, 0%); }
+    transform: translate(0, -10%); }
 
   80% {
     transform: translate(0, 5%); }
@@ -241,7 +241,7 @@
 
   60% {
     opacity: 1;
-    -webkit-transform: translate(0%, 0); }
+    -webkit-transform: translate(-10%, 0); }
 
   80% {
     -webkit-transform: translate(5%, 0); }
@@ -256,7 +256,7 @@
 
   60% {
     opacity: 1;
-    -moz-transform: translate(0%, 0); }
+    -moz-transform: translate(-10%, 0); }
 
   80% {
     -moz-transform: translate(5%, 0); }
@@ -271,7 +271,7 @@
 
   60% {
     opacity: 1;
-    -o-transform: translate(0%, 0); }
+    -o-transform: translate(-10%, 0); }
 
   80% {
     -o-transform: translate(5%, 0); }
@@ -286,7 +286,7 @@
 
   60% {
     opacity: 1;
-    transform: translate(0%, 0); }
+    transform: translate(-10%, 0); }
 
   80% {
     transform: translate(5%, 0); }
@@ -359,7 +359,7 @@
 
   60% {
     opacity: 1;
-    -webkit-transform: translate(0%, 0); }
+    -webkit-transform: translate(10%, 0); }
 
   80% {
     -webkit-transform: translate(-5%, 0); }
@@ -374,7 +374,7 @@
 
   60% {
     opacity: 1;
-    -moz-transform: translate(0%, 0); }
+    -moz-transform: translate(10%, 0); }
 
   80% {
     -moz-transform: translate(-5%, 0); }
@@ -389,7 +389,7 @@
 
   60% {
     opacity: 1;
-    -o-transform: translate(0%, 0); }
+    -o-transform: translate(10%, 0); }
 
   80% {
     -o-transform: translate(-5%, 0); }
@@ -404,7 +404,7 @@
 
   60% {
     opacity: 1;
-    transform: translate(0%, 0); }
+    transform: translate(10%, 0); }
 
   80% {
     transform: translate(-5%, 0); }

@@ -6,7 +6,7 @@
 
 	60% {
 		opacity: 1;
-		@include translate($bounceEnd * -1);
+		@include translate($bounceStop * -1);
 	}
 
 	80% {
