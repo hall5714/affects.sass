@@ -20,7 +20,7 @@
 	}
 
 	100% {
-		@include rotate($rotateHingedStartAngle);
+		@include rotate($rotateHingedStartAngle * -1);
 		@include transform-origin(right bottom);
 		opacity: 0;
 	}
