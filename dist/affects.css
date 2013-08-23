@@ -983,7 +983,7 @@
     opacity: 1; }
 
   100% {
-    -webkit-transform: rotate(90deg);
+    -webkit-transform: rotate(-90deg);
     -webkit-transform-origin: left bottom;
     opacity: 0; } }
 
@@ -994,7 +994,7 @@
     opacity: 1; }
 
   100% {
-    -moz-transform: rotate(90deg);
+    -moz-transform: rotate(-90deg);
     -moz-transform-origin: left bottom;
     opacity: 0; } }
 
@@ -1005,7 +1005,7 @@
     opacity: 1; }
 
   100% {
-    -o-transform: rotate(90deg);
+    -o-transform: rotate(-90deg);
     -o-transform-origin: left bottom;
     opacity: 0; } }
 
@@ -1016,7 +1016,7 @@
     opacity: 1; }
 
   100% {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     transform-origin: left bottom;
     opacity: 0; } }
 
@@ -1081,7 +1081,7 @@
     opacity: 1; }
 
   100% {
-    -webkit-transform: rotate(-90deg);
+    -webkit-transform: rotate(90deg);
     -webkit-transform-origin: right bottom;
     opacity: 0; } }
 
@@ -1092,7 +1092,7 @@
     opacity: 1; }
 
   100% {
-    -moz-transform: rotate(-90deg);
+    -moz-transform: rotate(90deg);
     -moz-transform-origin: right bottom;
     opacity: 0; } }
 
@@ -1103,7 +1103,7 @@
     opacity: 1; }
 
   100% {
-    -o-transform: rotate(-90deg);
+    -o-transform: rotate(90deg);
     -o-transform-origin: right bottom;
     opacity: 0; } }
 
@@ -1114,7 +1114,7 @@
     opacity: 1; }
 
   100% {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     transform-origin: right bottom;
     opacity: 0; } }
 
@@ -1179,7 +1179,7 @@
     opacity: 1; }
 
   100% {
-    -webkit-transform: rotate(-90deg);
+    -webkit-transform: rotate(90deg);
     -webkit-transform-origin: left bottom;
     opacity: 0; } }
 
@@ -1190,7 +1190,7 @@
     opacity: 1; }
 
   100% {
-    -moz-transform: rotate(-90deg);
+    -moz-transform: rotate(90deg);
     -moz-transform-origin: left bottom;
     opacity: 0; } }
 
@@ -1201,7 +1201,7 @@
     opacity: 1; }
 
   100% {
-    -o-transform: rotate(-90deg);
+    -o-transform: rotate(90deg);
     -o-transform-origin: left bottom;
     opacity: 0; } }
 
@@ -1212,7 +1212,7 @@
     opacity: 1; }
 
   100% {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
     transform-origin: left bottom;
     opacity: 0; } }
 
@@ -1277,7 +1277,7 @@
     opacity: 1; }
 
   100% {
-    -webkit-transform: rotate(90deg);
+    -webkit-transform: rotate(-90deg);
     -webkit-transform-origin: right bottom;
     opacity: 0; } }
 
@@ -1288,7 +1288,7 @@
     opacity: 1; }
 
   100% {
-    -moz-transform: rotate(90deg);
+    -moz-transform: rotate(-90deg);
     -moz-transform-origin: right bottom;
     opacity: 0; } }
 
@@ -1299,7 +1299,7 @@
     opacity: 1; }
 
   100% {
-    -o-transform: rotate(90deg);
+    -o-transform: rotate(-90deg);
     -o-transform-origin: right bottom;
     opacity: 0; } }
 
@@ -1310,7 +1310,7 @@
     opacity: 1; }
 
   100% {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     transform-origin: right bottom;
     opacity: 0; } }
 
