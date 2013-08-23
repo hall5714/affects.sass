@@ -82,7 +82,7 @@ animation.controller('AnimationController', function($scope, $timeout, $compile)
 
 	$timeout(function() {
 		$scope.animateTitle = true;
-	})
+	}, 500)
 
 });
 
