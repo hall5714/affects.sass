@@ -14,14 +14,14 @@
 
 @include keyframes('animate-rotate-out') {
 	0% {
-		@include transform-origin(center center);
 		@include rotate($rotateEndAngle);
+		@include transform-origin(center center);
 		opacity: 1;
 	}
 
 	100% {
+		@include rotate($rotateStartAngle * -1);
 		@include transform-origin(center center);
-		@include rotate($rotateStartAngle);
 		opacity: 0;
 	}
 }
