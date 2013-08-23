@@ -12,7 +12,7 @@
 	}
 }
 
-@keyframes keyframes('animate-rotate-out') {
+@include keyframes('animate-rotate-out') {
 	0% {
 		@include transform-origin(center center);
 		@include rotate($rotateEndAngle);

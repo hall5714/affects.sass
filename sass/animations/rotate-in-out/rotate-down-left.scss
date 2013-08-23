@@ -12,7 +12,7 @@
 	}
 }
 
-@keyframes keyframes('animate-rotate-out-down-left') {
+@include keyframes('animate-rotate-out-down-left') {
 	0% {
 		@include rotate($rotateHingedEndAngle);
 		@include transform-origin(left bottom);
