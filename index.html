@@ -67,6 +67,11 @@
                     <button class="button small" ng-click="anim.open=true" style="margin-bottom: 5px">{{anim.name}}</button>
                 </span>
 
+                <h4>Rotating Animations (Enter/Leave)</h4>
+                 <span ng-repeat="anim in animationsRotate">
+                    <button class="button small" ng-click="anim.open=true" style="margin-bottom: 5px">{{anim.name}}</button>
+                </span>
+
                 <!-- As of Angular 1.2rc1, dynamic animation definitions are not supported. -->
                 <div class="reveal-modal animate-fade" ng-if="isActive('fade')" ><div inter-modal></div></div>
                 <div class="reveal-modal animate-scale-up-fade" ng-if="isActive('scale-up-fade')" ><div inter-modal></div></div>
@@ -80,6 +85,7 @@
                 <div class="reveal-modal animate-bounce-right" ng-if="isActive('bounce-right')" ><div inter-modal></div></div>
                 <div class="reveal-modal animate-bounce-left" ng-if="isActive('bounce-left')" ><div inter-modal></div></div>
                 <div class="reveal-modal animate-bounce-right" ng-if="isActive('bounce-right')" ><div inter-modal></div></div>
+                <div class="reveal-modal animate-rotate" ng-if="isActive('rotate')" ><div inter-modal></div></div>
             </div>
         </div>
 

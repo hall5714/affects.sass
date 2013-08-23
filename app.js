@@ -37,7 +37,12 @@ animation.controller('AnimationController', function($scope, $timeout, $compile)
 	},{
 		name: 'bounce-left',
 		open: 'false'
-	}]
+	}];
+
+	$scope.animationsRotate = [{
+		name: 'rotate',
+		open: 'false'
+	}];	
 
 	$scope.modalOpen = false;
 	$scope.animateTitle = false;
@@ -49,6 +54,11 @@ animation.controller('AnimationController', function($scope, $timeout, $compile)
 		});
 
 		angular.forEach($scope.animationsBounce, function(anim) {
+			anim.open = false;
+			$scope[anim.name] = false;
+		});
+
+		angular.forEach($scope.animationsRotate, function(anim) {
 			anim.open = false;
 			$scope[anim.name] = false;
 		});
@@ -73,6 +83,16 @@ animation.controller('AnimationController', function($scope, $timeout, $compile)
 			}
 		});
 	}, true);
+
+	$scope.$watch('animationsRotate', function(newValue) {
+		angular.forEach($scope.animationsRotate, function(anim) {
+			if (anim.open == true) {
+				$scope[anim.name] = true;
+				$scope.modalOpen = true;
+			}
+		});
+	}, true);
+
 
 	$scope.isActive = function(value) {
 		return $scope[value];
