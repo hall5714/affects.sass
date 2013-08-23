@@ -1,0 +1,14 @@
+.animate-fade.ng-enter,
+.animate-fade.ng-leave {
+	@include transition(all, $fadeDuration, linear);
+}
+
+.animate-fade.ng-enter,
+.animate-fade.ng-leave.ng-leave-active {
+	opacity: 0;
+}
+
+.animate-fade.ng-leave,
+.animate-fade.ng-enter.ng-enter-active {
+	opacity: 1;
+}

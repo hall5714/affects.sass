@@ -1,0 +1,43 @@
+@include keyframes('animate-bounce-left-in') {
+	0% { 
+		opacity: 0;
+		@include translate($bounceStart);
+	}
+
+	60% {
+		opacity: 1;
+		@include translate($bounceEnd);
+	}
+
+	80% {
+		@include translate($bounceBack);
+	}
+
+	100% {
+		@include translate($bounceEnd);
+	}
+}
+
+@include keyframes('animate-bounce-left-out') {
+    0% {
+    	@include translate($bounceEnd);
+    }
+
+    20% {
+        opacity: 1;
+        @include translate($bounceBack * -1);
+    }
+
+    100% {
+        opacity: 0;
+        @include translate($bounceStart);
+    }
+}
+
+.animate-bounce-left.ng-enter {
+    @include animation(animate-bounce-left-in, $bounceDuration);
+}
+
+.animate-bounce-left.ng-leave {
+	@include animation(animate-bounce-left-out, $bounceDuration);
+}

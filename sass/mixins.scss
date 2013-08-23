@@ -1,0 +1,11 @@
+@mixin rotate($deg) {
+	@include transform(rotate(#{$deg}deg))
+}
+
+@mixin scale($size) {
+	@include transform(scale(#{$size}))
+}
+
+@mixin translate($x, $y: 0) {
+	@include transform(translate($x, $y))
+}
