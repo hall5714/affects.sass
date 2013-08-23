@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="no-js" ng-app="AnimationApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link href="../affects/sass/affects.css" rel="stylesheet">
+        <link href="http://cdn.jsdelivr.net/foundation/4.3.1/css/foundation.min.css" rel="stylesheet">
+        <style>
+
+        body {
+            /* By default, Prevents modals from left/right causing scrollbars */
+            overflow-x: hidden;
+
+            /* prevents scroll bar on intro animation */
+            overflow-y: scroll;
+        }
+
+        h4 {
+            margin-top: 1em;
+        }
+
+        .reveal-modal {
+            /* display the modals at all times */
+            display: block!important;
+            visibility: visible!important;
+        }
+
+        .affects-header {
+            text-align: center;
+
+        }
+
+        .affects-header > h1 {
+            margin-bottom: 0em;
+        }
+
+        </style>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular.min.js" type="text/javascript"></script>
+        <script src="angular-animate.js" type="text/javascript"></script>
+        <script src="app.js" type="text/javascript"></script>   
+    </head>
+    <body ng-controller="AnimationController">
+
+        <div class="row">
+            <div class="animate-bounce-down affects-header " ng-if="animateTitle">
+                <h1 style="color: #9ACD32">affects.sass</h1>
+                <h6 class="subheader">A Sassy animation library for AngularJS</h6>
+                <h6 class="subheader">Inspired by <a href="http://daneden.me/animate/">Animate.css</a></h6>
+                <hr>
+            </div>
+
+            <div class="small-12 large-12 small-centered large-centered columns animate-bounce-up" ng-if="animateTitle">
+                <h4>Fading Animations (Enter/Leave)</h4>
+
+                <span ng-repeat="anim in animationsFade">
+                    <button class="button small" ng-click="anim.open=true" style="margin-bottom: 5px">{{anim.name}}</button>
+                </span>
+
+                <h4>Bouncing Animations (Enter/Leave)</h4>
+                 <span ng-repeat="anim in animationsBounce">
+                    <button class="button small" ng-click="anim.open=true" style="margin-bottom: 5px">{{anim.name}}</button>
+                </span>
+
+                <!-- As of Angular 1.2rc1, dynamic animation definitions are not supported. -->
+                <div class="reveal-modal animate-fade" ng-if="isActive('fade')" ><div inter-modal></div></div>
+                <div class="reveal-modal animate-scale-up-fade" ng-if="isActive('scale-up-fade')" ><div inter-modal></div></div>
+                <div class="reveal-modal animate-scale-down-fade" ng-if="isActive('scale-down-fade')" ><div inter-modal></div></div>
+                <div class="reveal-modal animate-slide-right-fade" ng-if="isActive('slide-right-fade')" ><div inter-modal></div></div>
+                <div class="reveal-modal animate-slide-left-fade" ng-if="isActive('slide-left-fade')" ><div inter-modal></div></div>
+                <div class="reveal-modal animate-slide-up-fade" ng-if="isActive('slide-up-fade')" ><div inter-modal></div></div>
+                <div class="reveal-modal animate-slide-down-fade" ng-if="isActive('slide-down-fade')" ><div inter-modal></div></div>
+                <div class="reveal-modal animate-bounce-up" ng-if="isActive('bounce-up')" style=""><div inter-modal></div></div>
+                <div class="reveal-modal animate-bounce-down" ng-if="isActive('bounce-down')" ><div inter-modal></div></div>
+                <div class="reveal-modal animate-bounce-right" ng-if="isActive('bounce-right')" ><div inter-modal></div></div>
+                <div class="reveal-modal animate-bounce-left" ng-if="isActive('bounce-left')" ><div inter-modal></div></div>
+                <div class="reveal-modal animate-bounce-right" ng-if="isActive('bounce-right')" ><div inter-modal></div></div>
+            </div>
+        </div>
+
+    </body>
+</html>
