@@ -880,46 +880,46 @@
 
 @-webkit-keyframes animate-rotate-out {
   0% {
-    -webkit-transform-origin: center center;
     -webkit-transform: rotate(0deg);
+    -webkit-transform-origin: center center;
     opacity: 1; }
 
   100% {
+    -webkit-transform: rotate(-200deg);
     -webkit-transform-origin: center center;
-    -webkit-transform: rotate(200deg);
     opacity: 0; } }
 
 @-moz-keyframes animate-rotate-out {
   0% {
-    -moz-transform-origin: center center;
     -moz-transform: rotate(0deg);
+    -moz-transform-origin: center center;
     opacity: 1; }
 
   100% {
+    -moz-transform: rotate(-200deg);
     -moz-transform-origin: center center;
-    -moz-transform: rotate(200deg);
     opacity: 0; } }
 
 @-o-keyframes animate-rotate-out {
   0% {
-    -o-transform-origin: center center;
     -o-transform: rotate(0deg);
+    -o-transform-origin: center center;
     opacity: 1; }
 
   100% {
+    -o-transform: rotate(-200deg);
     -o-transform-origin: center center;
-    -o-transform: rotate(200deg);
     opacity: 0; } }
 
 @keyframes animate-rotate-out {
   0% {
-    transform-origin: center center;
     transform: rotate(0deg);
+    transform-origin: center center;
     opacity: 1; }
 
   100% {
+    transform: rotate(-200deg);
     transform-origin: center center;
-    transform: rotate(200deg);
     opacity: 0; } }
 
 .animate-rotate.ng-enter {
@@ -1029,3 +1029,297 @@
   -webkit-animation: animate-rotate-out-down-left 0.5s;
   -moz-animation: animate-rotate-out-down-left 0.5s;
   animation: animate-rotate-out-down-left 0.5s; }
+
+@-webkit-keyframes animate-rotate-in-down-right {
+  0% {
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin: right bottom;
+    opacity: 0; }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+    -webkit-transform-origin: right bottom;
+    opacity: 1; } }
+
+@-moz-keyframes animate-rotate-in-down-right {
+  0% {
+    -moz-transform: rotate(90deg);
+    -moz-transform-origin: right bottom;
+    opacity: 0; }
+
+  100% {
+    -moz-transform: rotate(0deg);
+    -moz-transform-origin: right bottom;
+    opacity: 1; } }
+
+@-o-keyframes animate-rotate-in-down-right {
+  0% {
+    -o-transform: rotate(90deg);
+    -o-transform-origin: right bottom;
+    opacity: 0; }
+
+  100% {
+    -o-transform: rotate(0deg);
+    -o-transform-origin: right bottom;
+    opacity: 1; } }
+
+@keyframes animate-rotate-in-down-right {
+  0% {
+    transform: rotate(90deg);
+    transform-origin: right bottom;
+    opacity: 0; }
+
+  100% {
+    transform: rotate(0deg);
+    transform-origin: right bottom;
+    opacity: 1; } }
+
+@-webkit-keyframes animate-rotate-out-down-right {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -webkit-transform-origin: right bottom;
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin: right bottom;
+    opacity: 0; } }
+
+@-moz-keyframes animate-rotate-out-down-right {
+  0% {
+    -moz-transform: rotate(0deg);
+    -moz-transform-origin: right bottom;
+    opacity: 1; }
+
+  100% {
+    -moz-transform: rotate(-90deg);
+    -moz-transform-origin: right bottom;
+    opacity: 0; } }
+
+@-o-keyframes animate-rotate-out-down-right {
+  0% {
+    -o-transform: rotate(0deg);
+    -o-transform-origin: right bottom;
+    opacity: 1; }
+
+  100% {
+    -o-transform: rotate(-90deg);
+    -o-transform-origin: right bottom;
+    opacity: 0; } }
+
+@keyframes animate-rotate-out-down-right {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: right bottom;
+    opacity: 1; }
+
+  100% {
+    transform: rotate(-90deg);
+    transform-origin: right bottom;
+    opacity: 0; } }
+
+.animate-rotate-down-right.ng-enter {
+  -webkit-animation: animate-rotate-in-down-right 0.5s;
+  -moz-animation: animate-rotate-in-down-right 0.5s;
+  animation: animate-rotate-in-down-right 0.5s; }
+
+.animate-rotate-down-right.ng-leave {
+  -webkit-animation: animate-rotate-out-down-right 0.5s;
+  -moz-animation: animate-rotate-out-down-right 0.5s;
+  animation: animate-rotate-out-down-right 0.5s; }
+
+@-webkit-keyframes animate-rotate-in-up-left {
+  0% {
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin: left bottom;
+    opacity: 0; }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+    -webkit-transform-origin: left bottom;
+    opacity: 1; } }
+
+@-moz-keyframes animate-rotate-in-up-left {
+  0% {
+    -moz-transform: rotate(90deg);
+    -moz-transform-origin: left bottom;
+    opacity: 0; }
+
+  100% {
+    -moz-transform: rotate(0deg);
+    -moz-transform-origin: left bottom;
+    opacity: 1; } }
+
+@-o-keyframes animate-rotate-in-up-left {
+  0% {
+    -o-transform: rotate(90deg);
+    -o-transform-origin: left bottom;
+    opacity: 0; }
+
+  100% {
+    -o-transform: rotate(0deg);
+    -o-transform-origin: left bottom;
+    opacity: 1; } }
+
+@keyframes animate-rotate-in-up-left {
+  0% {
+    transform: rotate(90deg);
+    transform-origin: left bottom;
+    opacity: 0; }
+
+  100% {
+    transform: rotate(0deg);
+    transform-origin: left bottom;
+    opacity: 1; } }
+
+@-webkit-keyframes animate-rotate-out-up-left {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -webkit-transform-origin: left bottom;
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin: left bottom;
+    opacity: 0; } }
+
+@-moz-keyframes animate-rotate-out-up-left {
+  0% {
+    -moz-transform: rotate(0deg);
+    -moz-transform-origin: left bottom;
+    opacity: 1; }
+
+  100% {
+    -moz-transform: rotate(-90deg);
+    -moz-transform-origin: left bottom;
+    opacity: 0; } }
+
+@-o-keyframes animate-rotate-out-up-left {
+  0% {
+    -o-transform: rotate(0deg);
+    -o-transform-origin: left bottom;
+    opacity: 1; }
+
+  100% {
+    -o-transform: rotate(-90deg);
+    -o-transform-origin: left bottom;
+    opacity: 0; } }
+
+@keyframes animate-rotate-out-up-left {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: left bottom;
+    opacity: 1; }
+
+  100% {
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    opacity: 0; } }
+
+.animate-rotate-up-left.ng-enter {
+  -webkit-animation: animate-rotate-in-up-left 0.5s;
+  -moz-animation: animate-rotate-in-up-left 0.5s;
+  animation: animate-rotate-in-up-left 0.5s; }
+
+.animate-rotate-up-left.ng-leave {
+  -webkit-animation: animate-rotate-out-up-left 0.5s;
+  -moz-animation: animate-rotate-out-up-left 0.5s;
+  animation: animate-rotate-out-up-left 0.5s; }
+
+@-webkit-keyframes animate-rotate-in-up-right {
+  0% {
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin: right bottom;
+    opacity: 0; }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+    -webkit-transform-origin: right bottom;
+    opacity: 1; } }
+
+@-moz-keyframes animate-rotate-in-up-right {
+  0% {
+    -moz-transform: rotate(-90deg);
+    -moz-transform-origin: right bottom;
+    opacity: 0; }
+
+  100% {
+    -moz-transform: rotate(0deg);
+    -moz-transform-origin: right bottom;
+    opacity: 1; } }
+
+@-o-keyframes animate-rotate-in-up-right {
+  0% {
+    -o-transform: rotate(-90deg);
+    -o-transform-origin: right bottom;
+    opacity: 0; }
+
+  100% {
+    -o-transform: rotate(0deg);
+    -o-transform-origin: right bottom;
+    opacity: 1; } }
+
+@keyframes animate-rotate-in-up-right {
+  0% {
+    transform: rotate(-90deg);
+    transform-origin: right bottom;
+    opacity: 0; }
+
+  100% {
+    transform: rotate(0deg);
+    transform-origin: right bottom;
+    opacity: 1; } }
+
+@-webkit-keyframes animate-rotate-out-up-right {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -webkit-transform-origin: right bottom;
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: rotate(90deg);
+    -webkit-transform-origin: right bottom;
+    opacity: 0; } }
+
+@-moz-keyframes animate-rotate-out-up-right {
+  0% {
+    -moz-transform: rotate(0deg);
+    -moz-transform-origin: right bottom;
+    opacity: 1; }
+
+  100% {
+    -moz-transform: rotate(90deg);
+    -moz-transform-origin: right bottom;
+    opacity: 0; } }
+
+@-o-keyframes animate-rotate-out-up-right {
+  0% {
+    -o-transform: rotate(0deg);
+    -o-transform-origin: right bottom;
+    opacity: 1; }
+
+  100% {
+    -o-transform: rotate(90deg);
+    -o-transform-origin: right bottom;
+    opacity: 0; } }
+
+@keyframes animate-rotate-out-up-right {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: right bottom;
+    opacity: 1; }
+
+  100% {
+    transform: rotate(90deg);
+    transform-origin: right bottom;
+    opacity: 0; } }
+
+.animate-rotate-up-right.ng-enter {
+  -webkit-animation: animate-rotate-in-up-right 0.5s;
+  -moz-animation: animate-rotate-in-up-right 0.5s;
+  animation: animate-rotate-in-up-right 0.5s; }
+
+.animate-rotate-up-right.ng-leave {
+  -webkit-animation: animate-rotate-out-up-right 0.5s;
+  -moz-animation: animate-rotate-out-up-right 0.5s;
+  animation: animate-rotate-out-up-right 0.5s; }
