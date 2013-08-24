@@ -124,7 +124,7 @@ animation.controller('AnimationController', function($scope, $timeout, $compile)
 
 	$timeout(function() {
 		$scope.animateTitleComplete = true;
-	}, 1900);
+	}, 2500);
 
 });
 
