@@ -6,22 +6,22 @@ animation.controller('AnimationController', function($scope, $timeout, $compile)
 		name: 'fade',
 		open: 'false'
 	},{
-		name: 'scale-up-fade',
+		name: 'scale-fade-up',
 		open: 'false'
 	},{
-		name: 'scale-down-fade',
+		name: 'scale-fade-down',
 		open: 'false'
 	},{
-		name: 'slide-right-fade',
+		name: 'fade-right',
 		open: 'false'
 	},{
-		name: 'slide-left-fade',
+		name: 'fade-left',
 		open: 'false'
 	},{
-		name: 'slide-up-fade',
+		name: 'fade-up',
 		open: 'false'
 	},{
-		name: 'slide-down-fade',
+		name: 'fade-down',
 		open: 'false'
 	}];
 
@@ -54,13 +54,12 @@ animation.controller('AnimationController', function($scope, $timeout, $compile)
 	},{
 		name: 'rotate-up-right',
 		open: 'false'
-	},{
-		name: 'squish',
-		open: 'false'
 	}];	
 
 	$scope.modalOpen = false;
-	$scope.animateTitle = false;
+	$scope.animateIntro = false;
+	$scope.animateIntroComplete = false;
+	$scope.animateTitleComplete = false;
 
 	$scope.unsetModals = function() {
 		angular.forEach($scope.animationsFade, function(anim) {
@@ -116,8 +115,16 @@ animation.controller('AnimationController', function($scope, $timeout, $compile)
 	$scope.unsetModals();
 
 	$timeout(function() {
-		$scope.animateTitle = true;
+		$scope.animateIntro = true;
 	});
+
+	$timeout(function() {
+		$scope.animateIntroComplete = true;
+	}, 1500);
+
+	$timeout(function() {
+		$scope.animateTitleComplete = true;
+	}, 1900);
 
 });
 
