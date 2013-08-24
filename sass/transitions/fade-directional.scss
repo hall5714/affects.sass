@@ -12,31 +12,31 @@
 .animate-fade-down.ng-leave,
 .animate-fade-up.ng-enter,
 .animate-fade-up.ng-leave {
-    @extend .aniamte-fade-left.ng-enter;
+    @extend .animate-fade-left.ng-enter;
     @include translate(0, $slideY);
 }
 
-.aniamte-fade-left.ng-enter,
-.aniamte-fade-left.ng-leave {
-    @extend .aniamte-fade-left.ng-enter;
+.animate-fade-left.ng-enter,
+.animate-fade-left.ng-leave {
+    @extend .animate-fade-left.ng-enter;
     @include translate($slideX * -1, 0);
 }
 
 .animate-fade-down.ng-enter,
 .animate-fade-down.ng-leave {
-    @extend .aniamte-fade-left.ng-enter;
+    @extend .animate-fade-left.ng-enter;
     @include translate(0, $slideY * -1);
 }
 
 .animate-fade-up.ng-enter,
 .animate-fade-up.ng-leave {
-    @extend .aniamte-fade-left.ng-enter;
+    @extend .animate-fade-left.ng-enter;
     @include translate(0, $slideY);
 }
 
 .animate-fade-down.ng-enter.ng-enter-active,
 .animate-fade-up.ng-enter.ng-enter-active,
-.aniamte-fade-left.ng-enter.ng-enter-active,
+.animate-fade-left.ng-enter.ng-enter-active,
 .animate-fade-right.ng-enter.ng-enter-active {
     @include translate(0, 0);
 }
@@ -45,8 +45,8 @@
 .animate-fade-down.ng-leave.ng-leave-active,
 .animate-fade-up.ng-enter,
 .animate-fade-up.ng-leave.ng-leave-active,
-.aniamte-fade-left.ng-enter,
-.aniamte-fade-left.ng-leave.ng-leave-active,
+.animate-fade-left.ng-enter,
+.animate-fade-left.ng-leave.ng-leave-active,
 .animate-fade-right.ng-enter,
 .animate-fade-right.ng-leave.ng-leave-active {
     @extend .animate-fade.ng-enter;
@@ -56,8 +56,8 @@
 .animate-fade-down.ng-enter.ng-enter-active,
 .animate-fade-up.ng-leave,
 .animate-fade-up.ng-enter.ng-enter-active,
-.aniamte-fade-left.ng-leave,
-.aniamte-fade-left.ng-enter.ng-enter-active,
+.animate-fade-left.ng-leave,
+.animate-fade-left.ng-enter.ng-enter-active,
 .animate-fade-right.ng-leave,
 .animate-fade-right.ng-enter.ng-enter-active {
     @extend .animate-fade.ng-leave;
