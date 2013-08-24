@@ -1,32 +1,32 @@
 @import 'fade';
 
-.animate-scale-down-fade.ng-enter,
-.animate-scale-down-fade.ng-leave {
+.animate-scale-fade-down.ng-enter,
+.animate-scale-fade-down.ng-leave {
 	@include transition(all $scaleDuration $scaleMethod);
 	@include scale($scaleSmall);
 }
 
-.animate-scale-up-fade.ng-enter,
-.animate-scale-up-fade.ng-leave {
-	@extend .animate-scale-down-fade.ng-enter;
+.animate-scale-fade-up.ng-enter,
+.animate-scale-fade-up.ng-leave {
+	@extend .animate-scale-fade-down.ng-enter;
 	@include scale($scaleLarge);
 }
 
-.animate-scale-up-fade.ng-enter.ng-enter-active,
-.animate-scale-down-fade.ng-enter.ng-enter-active {
+.animate-scale-fade-up.ng-enter.ng-enter-active,
+.animate-scale-fade-down.ng-enter.ng-enter-active {
 	@include scale(1);
 }
 
-.animate-scale-up-fade.ng-enter,
-.animate-scale-up-fade.ng-leave.ng-leave-active,
-.animate-scale-down-fade.ng-enter,
-.animate-scale-down-fade.ng-leave.ng-leave-active {
+.animate-scale-fade-up.ng-enter,
+.animate-scale-fade-up.ng-leave.ng-leave-active,
+.animate-scale-fade-down.ng-enter,
+.animate-scale-fade-down.ng-leave.ng-leave-active {
 	@extend .animate-fade.ng-enter;
 }
 
-.animate-scale-up-fade.ng-leave,
-.animate-scale-up-fade.ng-enter.ng-enter-active,
-.animate-scale-down-fade.ng-leave,
-.animate-scale-down-fade.ng-enter.ng-enter-active {
+.animate-scale-fade-up.ng-leave,
+.animate-scale-fade-up.ng-enter.ng-enter-active,
+.animate-scale-fade-down.ng-leave,
+.animate-scale-fade-down.ng-enter.ng-enter-active {
 	@extend .animate-fade.ng-leave;
 }

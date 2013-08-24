@@ -5,8 +5,8 @@
 
 // simple transitions
 @import 'transitions/fade';
+@import 'transitions/fade-directional';
 @import 'transitions/scale-fade';
-@import 'transitions/slide-fade';
 
 // bounce animations
 @import 'animations/bounce-in-out/bounce-down';
@@ -20,6 +20,3 @@
 @import 'animations/rotate-in-out/rotate-down-right';
 @import 'animations/rotate-in-out/rotate-up-left';
 @import 'animations/rotate-in-out/rotate-up-right';
-
-// squish
-@import 'animations/squish-in-out/squish';
