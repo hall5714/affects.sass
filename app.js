@@ -6,12 +6,6 @@ animation.controller('AnimationController', function($scope, $timeout, $compile)
 		name: 'fade',
 		open: 'false'
 	},{
-		name: 'scale-fade-up',
-		open: 'false'
-	},{
-		name: 'scale-fade-down',
-		open: 'false'
-	},{
 		name: 'fade-right',
 		open: 'false'
 	},{
@@ -22,6 +16,12 @@ animation.controller('AnimationController', function($scope, $timeout, $compile)
 		open: 'false'
 	},{
 		name: 'fade-down',
+		open: 'false'
+	},{
+		name: 'scale-fade-up',
+		open: 'false'
+	},{
+		name: 'scale-fade-down',
 		open: 'false'
 	}];
 
