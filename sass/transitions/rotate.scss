@@ -1,0 +1,18 @@
+@import 'fade';
+
+.animate-rotate.ng-enter,
+.animate-rotate.ng-leave {
+	@include transition(all $rotateDuration $rotateMethod);
+	@include rotate($rotateStartAngle * -1);
+	@include transform-origin(center center);
+}
+
+.animate-rotate.ng-enter,
+.animate-rotate.ng-leave.ng-leave-active {
+    @extend .animate-fade.ng-enter;
+}
+
+.animate-rotate.ng-leave,
+.animate-rotate.ng-enter.ng-enter-active {
+    @extend .animate-fade.ng-leave;
+}
