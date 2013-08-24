@@ -27,9 +27,9 @@
 }
 
 .animate-rotate-up-left.ng-enter {
-    @include animation(animate-rotate-in-up-left $rotateDuration);
+    @include animation(animate-rotate-in-up-left $rotateHingedDuration);
 }
 
 .animate-rotate-up-left.ng-leave {
-	@include animation(animate-rotate-out-up-left $rotateDuration);
+	@include animation(animate-rotate-out-up-left $rotateHingedDuration);
 }
