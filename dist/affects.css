@@ -919,14 +919,14 @@
     opacity: 0; } }
 
 .animate-rotate.ng-enter {
-  -webkit-animation: animate-rotate-in 0.5s;
-  -moz-animation: animate-rotate-in 0.5s;
-  animation: animate-rotate-in 0.5s; }
+  -webkit-animation: animate-rotate-in 1s;
+  -moz-animation: animate-rotate-in 1s;
+  animation: animate-rotate-in 1s; }
 
 .animate-rotate.ng-leave {
-  -webkit-animation: animate-rotate-out 0.5s;
-  -moz-animation: animate-rotate-out 0.5s;
-  animation: animate-rotate-out 0.5s; }
+  -webkit-animation: animate-rotate-out 1s;
+  -moz-animation: animate-rotate-out 1s;
+  animation: animate-rotate-out 1s; }
 
 @-webkit-keyframes animate-rotate-in-down-left {
   0% {
@@ -1017,14 +1017,14 @@
     opacity: 0; } }
 
 .animate-rotate-down-left.ng-enter {
-  -webkit-animation: animate-rotate-in-down-left 0.5s;
-  -moz-animation: animate-rotate-in-down-left 0.5s;
-  animation: animate-rotate-in-down-left 0.5s; }
+  -webkit-animation: animate-rotate-in-down-left 1s;
+  -moz-animation: animate-rotate-in-down-left 1s;
+  animation: animate-rotate-in-down-left 1s; }
 
 .animate-rotate-down-left.ng-leave {
-  -webkit-animation: animate-rotate-out-down-left 0.5s;
-  -moz-animation: animate-rotate-out-down-left 0.5s;
-  animation: animate-rotate-out-down-left 0.5s; }
+  -webkit-animation: animate-rotate-out-down-left 1s;
+  -moz-animation: animate-rotate-out-down-left 1s;
+  animation: animate-rotate-out-down-left 1s; }
 
 @-webkit-keyframes animate-rotate-in-down-right {
   0% {
@@ -1115,14 +1115,14 @@
     opacity: 0; } }
 
 .animate-rotate-down-right.ng-enter {
-  -webkit-animation: animate-rotate-in-down-right 0.5s;
-  -moz-animation: animate-rotate-in-down-right 0.5s;
-  animation: animate-rotate-in-down-right 0.5s; }
+  -webkit-animation: animate-rotate-in-down-right 1s;
+  -moz-animation: animate-rotate-in-down-right 1s;
+  animation: animate-rotate-in-down-right 1s; }
 
 .animate-rotate-down-right.ng-leave {
-  -webkit-animation: animate-rotate-out-down-right 0.5s;
-  -moz-animation: animate-rotate-out-down-right 0.5s;
-  animation: animate-rotate-out-down-right 0.5s; }
+  -webkit-animation: animate-rotate-out-down-right 1s;
+  -moz-animation: animate-rotate-out-down-right 1s;
+  animation: animate-rotate-out-down-right 1s; }
 
 @-webkit-keyframes animate-rotate-in-up-left {
   0% {
@@ -1213,14 +1213,14 @@
     opacity: 0; } }
 
 .animate-rotate-up-left.ng-enter {
-  -webkit-animation: animate-rotate-in-up-left 0.5s;
-  -moz-animation: animate-rotate-in-up-left 0.5s;
-  animation: animate-rotate-in-up-left 0.5s; }
+  -webkit-animation: animate-rotate-in-up-left 1s;
+  -moz-animation: animate-rotate-in-up-left 1s;
+  animation: animate-rotate-in-up-left 1s; }
 
 .animate-rotate-up-left.ng-leave {
-  -webkit-animation: animate-rotate-out-up-left 0.5s;
-  -moz-animation: animate-rotate-out-up-left 0.5s;
-  animation: animate-rotate-out-up-left 0.5s; }
+  -webkit-animation: animate-rotate-out-up-left 1s;
+  -moz-animation: animate-rotate-out-up-left 1s;
+  animation: animate-rotate-out-up-left 1s; }
 
 @-webkit-keyframes animate-rotate-in-up-right {
   0% {
@@ -1311,11 +1311,11 @@
     opacity: 0; } }
 
 .animate-rotate-up-right.ng-enter {
-  -webkit-animation: animate-rotate-in-up-right 0.5s;
-  -moz-animation: animate-rotate-in-up-right 0.5s;
-  animation: animate-rotate-in-up-right 0.5s; }
+  -webkit-animation: animate-rotate-in-up-right 1s;
+  -moz-animation: animate-rotate-in-up-right 1s;
+  animation: animate-rotate-in-up-right 1s; }
 
 .animate-rotate-up-right.ng-leave {
-  -webkit-animation: animate-rotate-out-up-right 0.5s;
-  -moz-animation: animate-rotate-out-up-right 0.5s;
-  animation: animate-rotate-out-up-right 0.5s; }
+  -webkit-animation: animate-rotate-out-up-right 1s;
+  -moz-animation: animate-rotate-out-up-right 1s;
+  animation: animate-rotate-out-up-right 1s; }
