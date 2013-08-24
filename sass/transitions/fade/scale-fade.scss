@@ -1,5 +1,3 @@
-@import 'fade';
-
 .animate-scale-fade-down.ng-enter,
 .animate-scale-fade-down.ng-leave {
 	@include transition(all $scaleDuration $scaleMethod);

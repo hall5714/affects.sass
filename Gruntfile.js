@@ -6,9 +6,16 @@ module.exports = function(grunt) {
                     'dist/affects.css': 'sass/affects.scss'
                 }
             }
+        },
+        cssmin: {
+            minify: {
+                src: 'dist/affects.css',
+                dest: 'dist/affects.min.css'
+            }
         }
     });
     
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.registerTask('default', ['sass']);
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.registerTask('default', ['sass', 'cssmin']);
 };
