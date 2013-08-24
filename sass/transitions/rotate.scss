@@ -7,6 +7,10 @@
 	@include transform-origin(center center);
 }
 
+.animate-rotate.ng-enter.ng-enter-active {
+	@include rotate($rotateEndAngle);
+}
+
 .animate-rotate.ng-enter,
 .animate-rotate.ng-leave.ng-leave-active {
     @extend .animate-fade.ng-enter;
