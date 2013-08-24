@@ -1,0 +1,22 @@
+@include keyframes('animate-squish-out') {
+	0% { 
+		width: 100%;
+	}
+
+	20% {
+		width: 120%
+	}
+
+	100% {
+		width: 0%;
+	}
+}
+
+
+.animate-squish.ng-enter {
+	@include animation(animate-squish-out $rotateDuration);
+}
+
+.animate-squish.ng-leave {
+	@include animation(animate-squish-out $rotateDuration);
+}

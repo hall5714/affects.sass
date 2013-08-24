@@ -1323,3 +1323,53 @@
   -webkit-animation: animate-rotate-out-up-right 0.5s;
   -moz-animation: animate-rotate-out-up-right 0.5s;
   animation: animate-rotate-out-up-right 0.5s; }
+
+@-webkit-keyframes animate-squish-out {
+  0% {
+    width: 100%; }
+
+  20% {
+    width: 120%; }
+
+  100% {
+    width: 0%; } }
+
+@-moz-keyframes animate-squish-out {
+  0% {
+    width: 100%; }
+
+  20% {
+    width: 120%; }
+
+  100% {
+    width: 0%; } }
+
+@-o-keyframes animate-squish-out {
+  0% {
+    width: 100%; }
+
+  20% {
+    width: 120%; }
+
+  100% {
+    width: 0%; } }
+
+@keyframes animate-squish-out {
+  0% {
+    width: 100%; }
+
+  20% {
+    width: 120%; }
+
+  100% {
+    width: 0%; } }
+
+.animate-squish.ng-enter {
+  -webkit-animation: animate-squish-out 0.5s;
+  -moz-animation: animate-squish-out 0.5s;
+  animation: animate-squish-out 0.5s; }
+
+.animate-squish.ng-leave {
+  -webkit-animation: animate-squish-out 0.5s;
+  -moz-animation: animate-squish-out 0.5s;
+  animation: animate-squish-out 0.5s; }
