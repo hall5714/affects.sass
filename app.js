@@ -54,6 +54,9 @@ animation.controller('AnimationController', function($scope, $timeout, $compile)
 	},{
 		name: 'rotate-up-right',
 		open: 'false'
+	},{
+		name: 'squish',
+		open: 'false'
 	}];	
 
 	$scope.modalOpen = false;
