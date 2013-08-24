@@ -120,11 +120,11 @@ animation.controller('AnimationController', function($scope, $timeout, $compile)
 
 	$timeout(function() {
 		$scope.animateIntroComplete = true;
-	}, 1500);
+	}, 1700);
 
 	$timeout(function() {
 		$scope.animateTitleComplete = true;
-	}, 2500);
+	}, 2700);
 
 });
 
