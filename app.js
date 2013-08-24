@@ -2,59 +2,67 @@ var animation = angular.module('AnimationApp', ['ngAnimate']);
 
 animation.controller('AnimationController', function($scope, $timeout, $compile) {
 
-	$scope.animationsFade = [{
-		name: 'fade',
-		open: 'false'
+	$scope.animations = [{
+		name: 'Fade',
+		type: 'Enter/Leave',
+		animations: [{
+			name: 'fade',
+			open: 'false'
+		},{
+			name: 'fade-right',
+			open: 'false'
+		},{
+			name: 'fade-left',
+			open: 'false'
+		},{
+			name: 'fade-up',
+			open: 'false'
+		},{
+			name: 'fade-down',
+			open: 'false'
+		},{
+			name: 'scale-fade-up',
+			open: 'false'
+		},{
+			name: 'scale-fade-down',
+			open: 'false'
+		}]
 	},{
-		name: 'fade-right',
-		open: 'false'
+		name: 'Bounce',
+		type: 'Enter/Leave',
+		animations: [{
+			name: 'bounce-down',
+			open: 'false'
+		},{
+			name: 'bounce-up',
+			open: 'false'
+		},{
+			name: 'bounce-right',
+			open: 'false'
+		},{
+			name: 'bounce-left',
+			open: 'false'
+		}]
 	},{
-		name: 'fade-left',
-		open: 'false'
-	},{
-		name: 'fade-up',
-		open: 'false'
-	},{
-		name: 'fade-down',
-		open: 'false'
-	},{
-		name: 'scale-fade-up',
-		open: 'false'
-	},{
-		name: 'scale-fade-down',
-		open: 'false'
+		name: 'Rotate',
+		type: 'Enter/Leave',
+		animations: [{
+			name: 'rotate',
+			open: 'false'
+		},{
+			name: 'rotate-down-left',
+			open: 'false'
+		},{
+			name: 'rotate-down-right',
+			open: 'false'
+		},{
+			name: 'rotate-up-left',
+			open: 'false'
+		},{
+			name: 'rotate-up-right',
+			open: 'false'
+		}]
 	}];
-
-	$scope.animationsBounce = [{
-		name: 'bounce-down',
-		open: 'false'
-	},{
-		name: 'bounce-up',
-		open: 'false'
-	},{
-		name: 'bounce-right',
-		open: 'false'
-	},{
-		name: 'bounce-left',
-		open: 'false'
-	}];
-
-	$scope.animationsRotate = [{
-		name: 'rotate',
-		open: 'false'
-	},{
-		name: 'rotate-down-left',
-		open: 'false'
-	},{
-		name: 'rotate-down-right',
-		open: 'false'
-	},{
-		name: 'rotate-up-left',
-		open: 'false'
-	},{
-		name: 'rotate-up-right',
-		open: 'false'
-	}];	
 
 	$scope.modalOpen = false;
 	$scope.animateIntro = false;
@@ -62,48 +70,25 @@ animation.controller('AnimationController', function($scope, $timeout, $compile)
 	$scope.animateTitleComplete = false;
 
 	$scope.unsetModals = function() {
-		angular.forEach($scope.animationsFade, function(anim) {
-			anim.open = false;
-			$scope[anim.name] = false;
-		});
+		angular.forEach($scope.animations, function(animations) {
+			angular.forEach(animations.animations, function (animation) {
+				animation.open = false;
+				$scope[animation.name] = false;
+			});
 
-		angular.forEach($scope.animationsBounce, function(anim) {
-			anim.open = false;
-			$scope[anim.name] = false;
-		});
-
-		angular.forEach($scope.animationsRotate, function(anim) {
-			anim.open = false;
-			$scope[anim.name] = false;
 		});
 
 		$scope.modalOpen = false;
 	};
 
-	$scope.$watch('animationsFade', function(newValue) {
-		angular.forEach($scope.animationsFade, function(anim) {
-			if (anim.open == true) {
-				$scope[anim.name] = true;
-				$scope.modalOpen = true;
-			}
-		});
-	}, true);
-
-	$scope.$watch('animationsBounce', function(newValue) {
-		angular.forEach($scope.animationsBounce, function(anim) {
-			if (anim.open == true) {
-				$scope[anim.name] = true;
-				$scope.modalOpen = true;
-			}
-		});
-	}, true);
-
-	$scope.$watch('animationsRotate', function(newValue) {
-		angular.forEach($scope.animationsRotate, function(anim) {
-			if (anim.open == true) {
-				$scope[anim.name] = true;
-				$scope.modalOpen = true;
-			}
+	$scope.$watch('animations', function(newValue) {
+		angular.forEach($scope.animations, function(animations) {
+			angular.forEach(animations.animations, function (animation, index) {
+				if (animation.open == true) {
+					$scope[animation.name] = true;
+					$scope.modalOpen = true;
+				}
+			});
 		});
 	}, true);
 

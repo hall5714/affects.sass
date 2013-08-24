@@ -67,41 +67,32 @@
             </div>
 
             <div class="small-12 large-12 small-centered large-centered columns animate-bounce-up" ng-if="animateIntro">
-                <h4>Fading Animations (Enter/Leave)</h4>
-
-                <span ng-repeat="anim in animationsFade">
-                    <button class="button small" ng-click="anim.open=true" style="margin-bottom: 5px">{{anim.name}}</button>
+                <span ng-repeat="category in animations">
+                    <h4>{{category.name}} Animations (Enter/Leave)</h4>
+                    <span ng-repeat="animation in category.animations">
+                        <button class="button small" ng-click="animation.open=true" style="margin-bottom: 5px">{{animation.name}}</button>
+                    </span>
                 </span>
-
-                <h4>Bouncing Animations (Enter/Leave)</h4>
-                 <span ng-repeat="anim in animationsBounce">
-                    <button class="button small" ng-click="anim.open=true" style="margin-bottom: 5px">{{anim.name}}</button>
-                </span>
-
-                <h4>Rotating Animations (Enter/Leave)</h4>
-                 <span ng-repeat="anim in animationsRotate">
-                    <button class="button small" ng-click="anim.open=true" style="margin-bottom: 5px">{{anim.name}}</button>
-                </span>
-
-                <!-- As of Angular 1.2rc1, dynamic animation definitions are not supported. -->
-                <div class="reveal-modal animate-fade" ng-if="isActive('fade')" ><div inter-modal></div></div>
-                <div class="reveal-modal animate-scale-fade-up" ng-if="isActive('scale-fade-up')" ><div inter-modal></div></div>
-                <div class="reveal-modal animate-scale-fade-down" ng-if="isActive('scale-fade-down')" ><div inter-modal></div></div>
-                <div class="reveal-modal animate-fade-right" ng-if="isActive('fade-right')" ><div inter-modal></div></div>
-                <div class="reveal-modal animate-fade-left" ng-if="isActive('fade-left')" ><div inter-modal></div></div>
-                <div class="reveal-modal animate-fade-up" ng-if="isActive('fade-up')" ><div inter-modal></div></div>
-                <div class="reveal-modal animate-fade-down" ng-if="isActive('fade-down')" ><div inter-modal></div></div>
-                <div class="reveal-modal animate-bounce-up" ng-if="isActive('bounce-up')" style=""><div inter-modal></div></div>
-                <div class="reveal-modal animate-bounce-down" ng-if="isActive('bounce-down')" ><div inter-modal></div></div>
-                <div class="reveal-modal animate-bounce-right" ng-if="isActive('bounce-right')" ><div inter-modal></div></div>
-                <div class="reveal-modal animate-bounce-left" ng-if="isActive('bounce-left')" ><div inter-modal></div></div>
-                <div class="reveal-modal animate-bounce-right" ng-if="isActive('bounce-right')" ><div inter-modal></div></div>
-                <div class="reveal-modal animate-rotate" ng-if="isActive('rotate')" ><div inter-modal></div></div>
-                <div class="reveal-modal animate-rotate-down-left" ng-if="isActive('rotate-down-left')" ><div inter-modal></div></div>
-                <div class="reveal-modal animate-rotate-down-right" ng-if="isActive('rotate-down-right')" ><div inter-modal></div></div>
-                <div class="reveal-modal animate-rotate-up-left" ng-if="isActive('rotate-up-left')" ><div inter-modal></div></div>
-                <div class="reveal-modal animate-rotate-up-right" ng-if="isActive('rotate-up-right')" ><div inter-modal></div></div>
             </div>
+
+            <!-- As of Angular 1.2rc1, dynamic animation definitions are not supported. -->
+            <div class="reveal-modal animate-fade" ng-if="isActive('fade')" ><div inter-modal></div></div>
+            <div class="reveal-modal animate-scale-fade-up" ng-if="isActive('scale-fade-up')" ><div inter-modal></div></div>
+            <div class="reveal-modal animate-scale-fade-down" ng-if="isActive('scale-fade-down')" ><div inter-modal></div></div>
+            <div class="reveal-modal animate-fade-right" ng-if="isActive('fade-right')" ><div inter-modal></div></div>
+            <div class="reveal-modal animate-fade-left" ng-if="isActive('fade-left')" ><div inter-modal></div></div>
+            <div class="reveal-modal animate-fade-up" ng-if="isActive('fade-up')" ><div inter-modal></div></div>
+            <div class="reveal-modal animate-fade-down" ng-if="isActive('fade-down')" ><div inter-modal></div></div>
+            <div class="reveal-modal animate-bounce-up" ng-if="isActive('bounce-up')" style=""><div inter-modal></div></div>
+            <div class="reveal-modal animate-bounce-down" ng-if="isActive('bounce-down')" ><div inter-modal></div></div>
+            <div class="reveal-modal animate-bounce-right" ng-if="isActive('bounce-right')" ><div inter-modal></div></div>
+            <div class="reveal-modal animate-bounce-left" ng-if="isActive('bounce-left')" ><div inter-modal></div></div>
+            <div class="reveal-modal animate-bounce-right" ng-if="isActive('bounce-right')" ><div inter-modal></div></div>
+            <div class="reveal-modal animate-rotate" ng-if="isActive('rotate')" ><div inter-modal></div></div>
+            <div class="reveal-modal animate-rotate-down-left" ng-if="isActive('rotate-down-left')" ><div inter-modal></div></div>
+            <div class="reveal-modal animate-rotate-down-right" ng-if="isActive('rotate-down-right')" ><div inter-modal></div></div>
+            <div class="reveal-modal animate-rotate-up-left" ng-if="isActive('rotate-up-left')" ><div inter-modal></div></div>
+            <div class="reveal-modal animate-rotate-up-right" ng-if="isActive('rotate-up-right')" ><div inter-modal></div></div>
         </div>
 
     </body>
