@@ -919,14 +919,14 @@
     opacity: 0; } }
 
 .animate-rotate.ng-enter {
-  -webkit-animation: animate-rotate-in 1s;
-  -moz-animation: animate-rotate-in 1s;
-  animation: animate-rotate-in 1s; }
+  -webkit-animation: animate-rotate-in 0.75s;
+  -moz-animation: animate-rotate-in 0.75s;
+  animation: animate-rotate-in 0.75s; }
 
 .animate-rotate.ng-leave {
-  -webkit-animation: animate-rotate-out 1s;
-  -moz-animation: animate-rotate-out 1s;
-  animation: animate-rotate-out 1s; }
+  -webkit-animation: animate-rotate-out 0.75s;
+  -moz-animation: animate-rotate-out 0.75s;
+  animation: animate-rotate-out 0.75s; }
 
 @-webkit-keyframes animate-rotate-in-down-left {
   0% {
