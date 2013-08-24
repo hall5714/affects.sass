@@ -1,0 +1,21 @@
+@import 'fade';
+
+.animate-fade-down.ng-enter,
+.animate-fade-down.ng-leave {
+	@extend .animate-fade.ng-enter;
+    @include translate(0, $slideY * -1);
+}
+
+.animate-fade-down.ng-enter.ng-enter-active {
+    @include translate(0, 0);
+}
+
+.animate-fade-down.ng-enter,
+.animate-fade-down.ng-leave.ng-leave-active {
+	@extend .animate-fade.ng-enter;
+}
+
+.animate-fade-down.ng-leave,
+.animate-fade-down.ng-enter.ng-enter-active {
+	@extend .animate-fade.ng-leave;
+}

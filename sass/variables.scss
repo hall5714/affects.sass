@@ -1,14 +1,13 @@
 $fadeDuration: .5s;
+$fadeMethod: 'ease';
+
+$slideX: 20%;
+$slideY: 20%;
 
 $scaleDuration: .3s;
 $scaleMethod: 'ease';
 $scaleSmall: 0.7;
 $scaleLarge: 1.4;
-
-$slideDuration: .5s;
-$slideMethod: 'ease';
-$slideX: 20%;
-$slideY: 20%;
 
 $bounceDuration: 1s;
 $bounceStart: -300%;

@@ -3,10 +3,13 @@
 @import 'mixins';
 @import 'variables';
 
-// simple transitions
-@import 'transitions/fade';
-@import 'transitions/fade-directional';
-@import 'transitions/scale-fade';
+// fade transitions
+@import 'transitions/fade/fade';
+@import 'transitions/fade/fade-down';
+@import 'transitions/fade/fade-up';
+@import 'transitions/fade/fade-right';
+@import 'transitions/fade/fade-left';
+@import 'transitions/fade/scale-fade';
 
 // bounce animations
 @import 'animations/bounce-in-out/bounce-down';
