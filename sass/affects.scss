@@ -12,14 +12,14 @@
 @import 'transitions/fade/scale-fade';
 
 // bounce animations
-//@import 'animations/bounce-in-out/bounce-down';
-//@import 'animations/bounce-in-out/bounce-up';
-//@import 'animations/bounce-in-out/bounce-right';
-//@import 'animations/bounce-in-out/bounce-left';
+@import 'animations/bounce-in-out/bounce-down';
+@import 'animations/bounce-in-out/bounce-up';
+@import 'animations/bounce-in-out/bounce-right';
+@import 'animations/bounce-in-out/bounce-left';
 
 // rotate animations
-//@import 'transitions/rotate';
-//@import 'animations/rotate-in-out/rotate-down-left';
-//@import 'animations/rotate-in-out/rotate-down-right';
-//@import 'animations/rotate-in-out/rotate-up-left';
-//@import 'animations/rotate-in-out/rotate-up-right';
+@import 'transitions/rotate';
+@import 'animations/rotate-in-out/rotate-down-left';
+@import 'animations/rotate-in-out/rotate-down-right';
+@import 'animations/rotate-in-out/rotate-up-left';
+@import 'animations/rotate-in-out/rotate-up-right';
